@@ -4923,7 +4923,7 @@ extern void _arch_start_cpu(int cpu_num, k_thread_stack_t *stack, int sz,
 }
 #endif
 
-#if defined(CONFIG_CPLUSPLUS) && defined(__cplusplus)
+#if defined(CONFIG_CPLUSPLUS) && defined(__cplusplus) && defined(CONFIG_CPLUSPLUS_NEW_DELETE_STUBS)
 /*
  * Define new and delete operators.
  * At this moment, the operators do nothing since objects are supposed
